@@ -18,9 +18,9 @@
               %img{ :src => asset_path("logo.png"),
                     class: "logo"}
               %div{ class: "title" } Iceberg
-            %div{class: "collapse navbar-collapse",
-              id: "%%bs-example-navbar-collapse-1"}
-              %ul{class: "nav navbar-nav"}
+            %div{ class: "collapse navbar-collapse",
+              id: "%%bs-example-navbar-collapse-1" }
+              %ul{ class: "nav navbar-nav"}
                 = render 'devise/menu/home_item'
                 = render 'devise/menu/registration_items'
                 = render 'devise/menu/my_profile_path'
@@ -30,23 +30,21 @@
         - flash.each do |name, msg|
           = content_tag :div, msg, class: name
         = yield
-    %h3
-    %ul{class: "list-group"}
+    %ul{ class: "list-group" }
       -if @hosted_projects.blank?
-        %li{class: "list-group-item"}
+        %li{ class: "list-group-item" }
           None
       -else
         - @hosted_projects.each do |p|
-          %li{class: "list-group-item"}
+          %li{ class: "list-group-item" }
             %strong
               Name:
             = p.name
-
-          %li{class: "list-group-item"}
+          %li{ class: "list-group-item" }
             %strong
               Public Description:
             = p.public_description
   %footer{ class: "footer" }
     .container-fluid
-      %div{class: "title"} Just the tip
-      %img{class: "image"}(src="https://d13yacurqjgara.cloudfront.net/users/62801/screenshots/1343041/iceberg_1x.jpg")
+      %div{ class: "title" } Just the tip
+      %img{ class: "image" }(src="https://d13yacurqjgara.cloudfront.net/users/62801/screenshots/1343041/iceberg_1x.jpg")
