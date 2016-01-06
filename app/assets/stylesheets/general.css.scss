@@ -240,11 +240,16 @@ ul {
 .footer {
   background-color: white;
   margin-top: 40px;
+  padding: 40px;
   width: 100%;
 }
 
 .footer .title {
   font-size: 20px;
   text-align: center;
-  padding: 40px;
+}
+
+.footer .image {
+  display: block;
+  margin: 20px auto;
 }
