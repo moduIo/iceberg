@@ -1,3 +1,9 @@
+//------------------------------------------
+//
+// Home Page Styles
+//
+//------------------------------------------
+
 //
 // Body background
 //
@@ -106,3 +112,26 @@ ul {
   color: #264409;
   border-color: #c6d880;
 }
+
+//------------------------------------------
+//
+// Login Page Styles
+//
+//------------------------------------------
+
+//
+// New User form
+//
+.new_user {
+  width: 80%;
+  border: 2px solid white;
+  padding: 15px;
+  margin: 20px auto;
+}
+
+@media screen and ( min-width: 768px ) {
+  .new_user {
+    width: 50%;
+  }
+}
+
