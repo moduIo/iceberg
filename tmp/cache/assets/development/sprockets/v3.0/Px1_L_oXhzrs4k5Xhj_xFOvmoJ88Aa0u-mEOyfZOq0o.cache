@@ -1,0 +1,11 @@
+I"Î(function() {
+  $(function() {
+    return $(document).on("page:change", function() {
+      if ($(".remove_fields")[0]) {
+        return $(".remove_fields")[0].click();
+      }
+    });
+  });
+
+}).call(this);
+:ET

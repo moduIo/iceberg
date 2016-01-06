@@ -1,0 +1,108 @@
+//
+// Body background
+//
+body {
+  background-color: #DAEBF5;
+}
+
+//
+// Page header
+//
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0px 20px;
+    border-bottom: 1px solid #fff;
+}
+
+//
+// Primary navbar
+//
+.navbar-default {
+  background-color: #78A6C2;
+}
+
+.navbar-default .navbar-brand {
+  color: #326989;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #4E82A0;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+//
+// Home project buttons
+//
+.btn {
+  font-weight: 900;
+}
+
+.btn:nth-of-type( 1 ) {
+  color: #FFAAAA;
+  border: solid 1px #FFAAAA;
+}
+
+.btn:nth-of-type( 2 ) {
+  color: #B8E55E;
+  border: solid 1px #B8E55E;
+}
+
+.btn:nth-of-type( 3 ) {
+  color: #78A6C2;
+  border: solid 1px #78A6C2;
+}
+
+.btn:nth-of-type( 4 ) {
+  color: #8B1558;
+  border: solid 1px #8B1558;
+}
+
+.btn:nth-of-type( 5 ) {
+  color: #F5C365;
+  border: solid 1px #F5C365;
+}
+
+.btn:nth-of-type( 6 ) {
+  color: #24857B;
+  border: solid 1px #24857B;
+}
+
+.btn:hover {
+  background-color: #fff;
+}
+
+// Formatting the menu
+
+.hmenu {
+  margin:0;
+  padding:0;
+  li {
+    display:inline;
+    padding:0;
+    margin:0;
+    margin-left: 5px;
+  }
+}
+
+// Taking out dots from unordered lists and removing default
+// margins and padding
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+// Flash success
+
+.update, .success {
+  background: #e6efc2;
+  color: #264409;
+  border-color: #c6d880;
+}

@@ -1,0 +1,42 @@
+%h1
+  Here are the available projects in this category:
+-if @projects.blank?
+  %ul{class: "list-group"}
+    %li{class: "list-group-item"}
+      None
+-else
+  -@projects.each do |project|
+    -if current_user then @user_project = @user_projects.where(project_id: project.id).first
+      %ul{class: "list-group"}
+        %li{class: "list-group-item"}
+          %strong
+            Project Name:
+          =project.name
+        %li{class: "list-group-item"}
+          %strong
+            Public Description:
+          =project.public_description
+        %li{class: "list-group-item"}
+          %strong
+            Skills Required:
+        %ul{class: "list-group"}
+          -project.skills.each do |skill|
+            %li{class: "list-group-item"}
+              =skill.skill
+        %li{class: "list-group-item"}
+          %strong
+            -if @user_project.nil?
+              =link_to "Request To Join Project",
+                new_message_path(sender_id: current_user.id,
+                project_id: project.id)
+            -elsif @user_project.status == 0
+              Your request to join this project was denied!
+            -elsif @user_project.status == 1
+              Your request to join this project is pending!
+            -elsif @user_project.status == 2
+              You're already part of this project!
+            -else
+              This shouldn't be here
+      %br
+
+

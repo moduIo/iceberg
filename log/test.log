@@ -1,0 +1,38 @@
+  [1m[36m (137.0ms)[0m  [1mDROP DATABASE IF EXISTS `nexus_project_test`[0m
+  [1m[35m (0.4ms)[0m  CREATE DATABASE `nexus_project_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (158.4ms)[0m  [1mCREATE TABLE `messages` (`id` int(11) auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `content` text, `user_id` int(11), `sender_id` int(11), `receiver_id` int(11), `project_id` int(11)) ENGINE=InnoDB[0m
+  [1m[35m (391.3ms)[0m  CREATE  INDEX `index_messages_on_project_id` USING btree ON `messages` (`project_id`) 
+  [1m[36m (131.2ms)[0m  [1mCREATE  INDEX `index_messages_on_receiver_id` USING btree ON `messages` (`receiver_id`) [0m
+  [1m[35m (144.6ms)[0m  CREATE  INDEX `index_messages_on_sender_id_and_receiver_id_and_created_at` USING btree ON `messages` (`sender_id`, `receiver_id`, `created_at`) 
+  [1m[36m (190.0ms)[0m  [1mCREATE  INDEX `index_messages_on_sender_id` USING btree ON `messages` (`sender_id`) [0m
+  [1m[35m (155.8ms)[0m  CREATE TABLE `project_categories` (`id` int(11) auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_category` varchar(255)) ENGINE=InnoDB
+  [1m[36m (188.6ms)[0m  [1mCREATE  INDEX `index_project_categories_on_project_category` USING btree ON `project_categories` (`project_category`) [0m
+  [1m[35m (149.9ms)[0m  CREATE TABLE `project_skills` (`id` int(11) auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `project_id` int(11), `skill_id` int(11)) ENGINE=InnoDB
+  [1m[36m (172.6ms)[0m  [1mCREATE  INDEX `index_project_skills_on_project_id` USING btree ON `project_skills` (`project_id`) [0m
+  [1m[35m (176.3ms)[0m  CREATE  INDEX `index_project_skills_on_skill_id` USING btree ON `project_skills` (`skill_id`) 
+  [1m[36m (190.2ms)[0m  [1mCREATE TABLE `projects` (`id` int(11) auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `name` varchar(255), `public_description` text, `private_description` text, `project_category_id` int(11), `user_id` int(11)) ENGINE=InnoDB[0m
+  [1m[35m (188.2ms)[0m  CREATE TABLE `skill_categories` (`id` int(11) auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `category` varchar(255)) ENGINE=InnoDB
+  [1m[36m (168.0ms)[0m  [1mCREATE  INDEX `index_skill_categories_on_category` USING btree ON `skill_categories` (`category`) [0m
+  [1m[35m (239.2ms)[0m  CREATE TABLE `skills` (`id` int(11) auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `skill` varchar(255), `skill_category_id` int(11)) ENGINE=InnoDB
+  [1m[36m (1366.6ms)[0m  [1mCREATE TABLE `user_projects` (`id` int(11) auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` int(11), `project_id` int(11), `status` int(11)) ENGINE=InnoDB[0m
+  [1m[35m (274.0ms)[0m  CREATE  INDEX `index_user_projects_on_project_id` USING btree ON `user_projects` (`project_id`) 
+  [1m[36m (209.8ms)[0m  [1mCREATE  INDEX `index_user_projects_on_user_id` USING btree ON `user_projects` (`user_id`) [0m
+  [1m[35m (231.2ms)[0m  CREATE TABLE `user_skills` (`id` int(11) auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `user_id` int(11), `skill_id` int(11)) ENGINE=InnoDB
+  [1m[36m (231.3ms)[0m  [1mCREATE  INDEX `index_user_skills_on_skill_id` USING btree ON `user_skills` (`skill_id`) [0m
+  [1m[35m (134.1ms)[0m  CREATE  INDEX `index_user_skills_on_user_id` USING btree ON `user_skills` (`user_id`) 
+  [1m[36m (186.9ms)[0m  [1mCREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `username` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (201.5ms)[0m  CREATE UNIQUE INDEX `index_users_on_email` USING btree ON `users` (`email`) 
+  [1m[36m (157.5ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token` USING btree ON `users` (`reset_password_token`) [0m
+  [1m[35m (224.5ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (333.2ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150927015619')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150821010746')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150828024724')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150828024734')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150828030645')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150828030656')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150828030709')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20150828030719')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20150828234759')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m

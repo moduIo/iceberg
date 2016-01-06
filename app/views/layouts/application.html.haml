@@ -1,0 +1,28 @@
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %title NexusProject
+    = include_gon
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .container-fluid
+      %center
+        %nav{class: "navbar navbar-default"}
+          .container-fluid
+            .navbar-header
+              %a{class: "navbar-brand", href: "#"}
+                Nexus Project
+            %div{class: "collapse navbar-collapse",
+              id: "%%bs-example-navbar-collapse-1"}
+              %ul{class: "nav navbar-nav"}
+                = render 'devise/menu/home_item'
+                = render 'devise/menu/registration_items'
+                = render 'devise/menu/my_profile_path'
+                = render 'devise/menu/message_items'
+                = render 'devise/menu/creation_items'
+                = render 'devise/menu/login_items'
+        - flash.each do |name, msg|
+          = content_tag :div, msg, class: name
+        = yield

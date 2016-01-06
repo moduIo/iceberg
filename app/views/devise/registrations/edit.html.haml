@@ -1,0 +1,23 @@
+%h2
+  Edit #{resource_name.to_s.humanize}
+= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+  = devise_error_messages!
+  .field
+    = f.input :email, label: "Email", autofocus: true
+  - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+    %div
+      Currently waiting confirmation for: #{resource.unconfirmed_email}
+  .field
+    = f.input :password, autocomplete: "off", hint: "Leave blank to leave password as it is"
+  .field
+    = f.input :password_confirmation, autocomplete: "off"
+  .field
+    = f.input :password, label: "Current password",
+      autocomplete: "off", hint: "We need your current password to confirm your changes"
+  .actions
+    = f.button :submit, "Update"
+
+%h3 Cancel my account
+%p
+  Unhappy? #{button_to "Cancel my account", registration_path(resource_name), class: "btn btn-default", data: { confirm: "Are you sure?" }, method: :delete}
+= link_to "Back", :back

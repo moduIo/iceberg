@@ -1,0 +1,15 @@
+%h1
+  Your Messages
+%br
+%ul{class: "list-group"}
+-if @messages.blank?
+  %li{class: "list-group-item"}
+    None
+-else
+  -@messages.each do |message|
+    %li{class: "list-group-item"}
+      =message.content
+    %li{class: "list-group-item"}
+      =button_to "Yes", message_path(message.id, status: 2, sender_id: message.sender_id, project_id: message.project_id), method: :delete, class: 'btn btn-default'
+      =button_to "No", message_path(message.id, status: 0, sender_id: message.sender_id, project_id: message.project_id), method: :delete, class: 'btn btn-default'
+  %br

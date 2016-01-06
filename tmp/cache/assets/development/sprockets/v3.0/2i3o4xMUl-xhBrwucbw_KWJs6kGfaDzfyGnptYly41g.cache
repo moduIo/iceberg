@@ -1,0 +1,34 @@
+I"Æ(function() {
+  $(function() {
+    return $('.add_fields').on('click', function() {
+      var skillCategoryInterval;
+      return skillCategoryInterval = setInterval(function() {
+        if ($(".skill_category_select_form").length) {
+          $(".skill_category_select_form").change(function() {
+            var $correspondingSkillSelect, i, optionValue, results;
+            $correspondingSkillSelect = $(this).parent("div").parent("div").next().children("div").children("select");
+            $correspondingSkillSelect.html("");
+            if ($(this).val() >= 0) {
+              optionValue = $(this).val();
+              i = 0;
+              results = [];
+              while (i < gon.skills.length) {
+                if (Number(gon.skills[i].skill_category_id === Number(optionValue))) {
+                  $correspondingSkillSelect.append($('<option/>', {
+                    value: gon.skills[i].id,
+                    text: gon.skills[i].skill
+                  }));
+                }
+                results.push(i++);
+              }
+              return results;
+            }
+          }).change();
+          return clearInterval(skillCategoryInterval);
+        }
+      }, 50);
+    });
+  });
+
+}).call(this);
+:ET

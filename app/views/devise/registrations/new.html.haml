@@ -1,0 +1,19 @@
+%h2 Sign up
+= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+  = devise_error_messages!
+  .field
+    = f.input :username, label: "Username: ", autofocus: true
+  .field
+    = f.input :email, label: "Email: "
+  .field
+    - if @minimum_password_length
+      %em
+        (#{@minimum_password_length} characters minimum)
+    %br
+    = f.input :password, label: "Password: ", autocomplete: "off"
+  .field
+    %br
+    = f.input :password_confirmation, label: "Password Confirmation: ",autocomplete: "off"
+  .actions
+    = f.button :submit, "Register"
+= render "devise/shared/links"

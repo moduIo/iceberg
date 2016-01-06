@@ -1,0 +1,3 @@
+- if !user_signed_in?
+  %li{class: active_class(new_user_registration_path)}
+    = link_to('Register', new_user_registration_path)

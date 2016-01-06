@@ -1,0 +1,6 @@
+- if user_signed_in?
+  %li{class: active_class(destroy_user_session_path)}
+    = link_to('Logout', destroy_user_session_path, :method => :delete)
+- else
+  %li{class: active_class(new_user_session_path)}
+    = link_to('Login', new_user_session_path)

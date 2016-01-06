@@ -1,0 +1,11 @@
+.nested-fields.project-skill-fields
+  .field
+    =f.input :id, label: "Narrow skill search by category: ",
+      collection: @skill_categories, label_method: :category,
+      input_method: :id,
+      input_html: { class: "skill_category_select_form" }
+  .field
+    = f.association :skill, label: "Choose a skill: ",
+      collection: Skill.all
+    = link_to_remove_association "remove skill", f
+  %br

@@ -1,0 +1,8 @@
+.page-header
+  %h1
+    Choose a Project Category
+    %small
+      Join a project
+
+- @categories.each do |category|
+  = link_to category.project_category, show_projects_path(project_category_id: category.id), method: :get, class: 'btn btn-default inline'

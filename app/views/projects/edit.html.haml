@@ -1,0 +1,10 @@
+= simple_form_for @project do |f|
+  %br
+  =f.input :name, label: "Name", autofocus: true
+  %br
+  =f.input :public_description, label: "Public Description"
+  %br
+  =f.input :private_description, label: "Private Description"
+  %br
+
+= link_to 'Back', :back

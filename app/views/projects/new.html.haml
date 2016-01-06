@@ -1,0 +1,21 @@
+= simple_form_for @project do |f|
+  %br
+  =f.input :project_category_id, label: "Select a project category: ",
+    collection: @categories, label_method: :project_category, value_method: :id
+  %br
+  =f.input :name, label: "Project Name: ", autofocus: true
+  %br
+  =f.input :public_description, label: "Public Description: ",
+    size: 1000
+  %br
+  =f.input :private_description, label: "Private Description: ",
+    size: 1000
+  %br
+  #skills
+    =f.simple_fields_for :skills do |project_skill|
+      =render 'project_skill_fields', f: project_skill
+    =link_to_add_association 'add skill', f, :project_skills
+  %br
+  = f.button :submit, "Create New Project!"
+
+=link_to 'Back', :back
