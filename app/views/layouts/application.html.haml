@@ -33,7 +33,7 @@
     %ul{ class: "list-group" }
       -if @projects.blank?
         %li{ class: "list-group-item" }
-          None
+          Looks like there aren't any projects yet... time to make one!
       -else
         - @projects.each do |p|
           %div{ class: "project" }
