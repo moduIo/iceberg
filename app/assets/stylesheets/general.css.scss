@@ -196,11 +196,16 @@ ul {
     border: 2px solid white;
     padding: 15px;
     margin: 20px 10px;
+    background-color: #4E82A0;
+}
+
+.new_user .form-group {
+    text-align: left;
 }
 
 @media screen and ( min-width: 768px ) {
     .new_user {
-        width: 50%;
+        width: 400px;
     }
 }
 
