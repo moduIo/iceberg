@@ -6,18 +6,16 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-    %link(rel="icon"
-          type="image/jpg"
-          href="https://d13yacurqjgara.cloudfront.net/users/319705/screenshots/1102328/iceberg.jpg")
+    %link{:href => asset_path("favicon.jpg")}(rel="icon" type="image/jpg")
   %body{class: "home"}
     .container-fluid
       %center
         %nav{class: "navbar navbar-default"}
           .container-fluid
             .navbar-header
-              %img{ :src => asset_path("logo.png"),
+              %img{ :src => asset_path("logo.jpg"),
                     class: "logo"}
-              %div{ class: "title" } Iceberg
+              //%div{ class: "title" } Iceberg
             %div{ class: "collapse navbar-collapse",
               id: "%%bs-example-navbar-collapse-1" }
               %ul{ class: "nav navbar-nav"}
