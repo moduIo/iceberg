@@ -31,19 +31,24 @@
           = content_tag :div, msg, class: name
         = yield
     %ul{ class: "list-group" }
-      -if @hosted_projects.blank?
+      -if @projects.blank?
         %li{ class: "list-group-item" }
           None
       -else
-        - @hosted_projects.each do |p|
-          %li{ class: "list-group-item" }
-            %strong
-              Name:
-            = p.name
-          %li{ class: "list-group-item" }
-            %strong
-              Public Description:
-            = p.public_description
+        - @projects.each do |p|
+          %div{ class: "project" }
+            %li{ class: "list-group-item" }
+              %strong
+                Name:
+              = p.name
+            %li{ class: "list-group-item" }
+              %strong
+                Public Description:
+              = p.public_description
+            %li{ class: "list-group-item" }
+              %strong
+                User:
+              = p.user
   %footer{ class: "footer" }
     .container-fluid
       %div{ class: "title" } Just the tip
