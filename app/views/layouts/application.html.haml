@@ -1,7 +1,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
-    %title Iceberg
+    %title Iceberg - Just the tip
     = include_gon
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
@@ -9,14 +9,15 @@
     %link(rel="icon"
           type="image/jpg"
           href="https://d13yacurqjgara.cloudfront.net/users/319705/screenshots/1102328/iceberg.jpg")
-  %body
+  %body{class: "home"}
     .container-fluid
       %center
         %nav{class: "navbar navbar-default"}
           .container-fluid
             .navbar-header
-              %a{class: "navbar-brand", href: "#"}
-                Iceberg
+              %img{ :src => asset_path("logo.png"),
+                    class: "logo"}
+              %div{ class: "title" } Iceberg
             %div{class: "collapse navbar-collapse",
               id: "%%bs-example-navbar-collapse-1"}
               %ul{class: "nav navbar-nav"}

@@ -13,9 +13,9 @@ class Project < ActiveRecord::Base
   belongs_to :user
   belongs_to :skill
 
-
   validates :name, presence: true
   validates :public_description, presence: true
   validates :private_description, presence: true
   validates :project_category, presence: true
+
 end

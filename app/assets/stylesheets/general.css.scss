@@ -21,18 +21,74 @@ body {
 }
 
 //
+// Home project buttons
+//
+.btn {
+  font-weight: 900;
+}
+
+.btn:nth-of-type( 1 ) {
+  color: #FFAAAA;
+  border: solid 1px #FFAAAA;
+}
+
+.btn:nth-of-type( 2 ) {
+  color: #B8E55E;
+  border: solid 1px #B8E55E;
+}
+
+.btn:nth-of-type( 3 ) {
+  color: #78A6C2;
+  border: solid 1px #78A6C2;
+}
+
+.btn:nth-of-type( 4 ) {
+  color: #8B1558;
+  border: solid 1px #8B1558;
+}
+
+.btn:nth-of-type( 5 ) {
+  color: #F5C365;
+  border: solid 1px #F5C365;
+}
+
+.btn:nth-of-type( 6 ) {
+  color: #24857B;
+  border: solid 1px #24857B;
+}
+
+.btn:hover {
+  background-color: #fff;
+}
+
+//------------------------------------------
+//
 // Primary navbar
 //
+//------------------------------------------
 .navbar-default {
     background-color: #78A6C2;
 }
 
-.navbar-default .navbar-brand {
-    color: #F5C365;
+.navbar-header {
+    margin-left: -15px !important;
 }
 
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .logo {
+    height: 50px;
+    float: left;
+}
+
+.navbar-default .title {
+    float: left;
+    font-size: 35px;
+    background-color: transparent;
+    color: white;
+    margin: 0 25px 0 10px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     background-color: #4E82A0;
     color: #fff;
@@ -40,47 +96,6 @@ body {
 
 .navbar-default .navbar-nav > li > a {
     color: #fff;
-}
-
-//
-// Home project buttons
-//
-.btn {
-    font-weight: 900;
-}
-
-.btn:nth-of-type( 1 ) {
-    color: #FFAAAA;
-    border: solid 1px #FFAAAA;
-}
-
-.btn:nth-of-type( 2 ) {
-    color: #B8E55E;
-    border: solid 1px #B8E55E;
-}
-
-.btn:nth-of-type( 3 ) {
-    color: #78A6C2;
-    border: solid 1px #78A6C2;
-}
-
-.btn:nth-of-type( 4 ) {
-    color: #8B1558;
-    border: solid 1px #8B1558;
-}
-
-.btn:nth-of-type( 5 ) {
-    color: #F5C365;
-    border: solid 1px #F5C365;
-}
-
-.btn:nth-of-type( 6 ) {
-    color: #24857B;
-    border: solid 1px #24857B;
-}
-
-.btn:hover {
-    background-color: #fff;
 }
 
 // Formatting the menu
