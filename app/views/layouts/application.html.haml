@@ -30,6 +30,22 @@
         - flash.each do |name, msg|
           = content_tag :div, msg, class: name
         = yield
+    %h3
+    %ul{class: "list-group"}
+      -if @hosted_projects.blank?
+        %li{class: "list-group-item"}
+          None
+      -else
+        - @hosted_projects.each do |p|
+          %li{class: "list-group-item"}
+            %strong
+              Name:
+            = p.name
+
+          %li{class: "list-group-item"}
+            %strong
+              Public Description:
+            = p.public_description
   %footer{ class: "footer" }
     .container-fluid
       %div{class: "title"} Just the tip
