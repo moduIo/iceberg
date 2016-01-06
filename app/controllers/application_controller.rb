@@ -14,6 +14,7 @@ class ApplicationController < ActionController::Base
 
   def set_projects
 
+      @user = current_user
       @projects = Project.all
       @skill_categories = SkillCategory.all
 
