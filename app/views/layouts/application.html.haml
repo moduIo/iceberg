@@ -26,3 +26,7 @@
         - flash.each do |name, msg|
           = content_tag :div, msg, class: name
         = yield
+  %footer{ class: "footer" }
+    .container-fluid
+      %div{class: "title"} Iceberg
+      %img{class: "image"}(src="/app/assets/images/logo.jpg")
