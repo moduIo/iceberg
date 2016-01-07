@@ -16,8 +16,14 @@ body {
 //
 .page-header {
     padding-bottom: 9px;
-    margin: 40px 0px 20px;
-    border-bottom: 1px solid #fff;
+    margin: 40px 0px 5px;
+    border-bottom: none;
+}
+
+.header {
+    border-bottom: solid 2px #78A6C2;
+    background-color: white;
+    padding-bottom: 25px;
 }
 
 //
@@ -25,6 +31,7 @@ body {
 //
 .btn {
     font-weight: 900;
+    margin: 3px;
 }
 
 .btn:nth-of-type( 1 ) {
