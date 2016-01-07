@@ -1,3 +1,37 @@
 // Place all the styles related to the Projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+//------------------------------------------
+//
+// New Project Page Styles
+//
+//------------------------------------------
+
+//
+// New Project form
+//
+.new_project {
+  width: 50%;
+  border: 2px solid white;
+  padding: 15px;
+  margin: 20px 10px;
+  background-color: #A8CBDF;
+  color: #fff;
+}
+
+// Small screen
+@media screen and ( max-width: 992px ) {
+  .new_project {
+    width: 80%;
+  }
+}
+
+// XS screen
+@media screen and ( max-width: 768px ) {
+  .new_project {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
