@@ -48,14 +48,15 @@
 // Skills
 //
 .skills .list-group {
-  border: solid 1px black;
+  border: solid 1px #78A6C2;
   background-color: white;
 
   .list-group-item {
     width: 20%;
     margin: 20px 2.5%;
-    border-radius: 5px;
+    border-radius: 25px;
     color: white;
+    border: solid 1px #78A6C2;
   }
 
   .list-group-item:nth-child( even ) {
