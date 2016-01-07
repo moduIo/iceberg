@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
   def set_projects
 
       @user = current_user
-      @projects = Project.all
+      @projects = Project.all.reverse
       @skill_categories = SkillCategory.all
 
   end
