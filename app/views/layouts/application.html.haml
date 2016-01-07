@@ -14,6 +14,7 @@
   -else
     %body
   .container-fluid{ class: "header" }
+
     %center
       %nav{class: "navbar navbar-default"}
         .container-fluid
@@ -33,6 +34,7 @@
       - flash.each do |name, msg|
         = content_tag :div, msg, class: name
       = yield
+      
   -if current_page?(root_path)
     %ul{ class: "list-group project-feed" }
       -if @projects.blank?
@@ -62,6 +64,7 @@
               %strong
                 Category:
               = p.project_category
+
   %footer{ class: "footer" }
     .container-fluid
       %div{ class: "title" } Just the tip
