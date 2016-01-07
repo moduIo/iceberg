@@ -14,11 +14,29 @@
   font-weight: 800;
 }
 
+//
+// Projects
+//
+.projects .project {
+  margin: 20px 0;
+}
+
+@media screen and ( max-width: 768px ) {
+  .projects .project {
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  .projects .list-group {
+    padding: 0;
+  }
+}
+
+//
+// Skills
+//
 .skills .list-group {
   .list-group-item {
-    width: 30%;
-    float: left;
-    margin: 10px 1.666%;
     border-radius: 20px;
   }
 
@@ -75,4 +93,8 @@
   h3:last-child {
     margin-top: 50px;
   }
+}
+
+.no-item {
+  width: 100%;
 }
