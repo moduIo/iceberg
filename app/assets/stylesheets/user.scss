@@ -14,11 +14,19 @@
   font-weight: 800;
 }
 
+.title {
+  margin: 20px 0;
+}
+
 //
 // Projects
 //
 .projects .project {
   margin: 20px 0;
+}
+
+.projects .hosted-projects {
+  margin-bottom: 20px;
 }
 
 @media screen and ( max-width: 768px ) {
@@ -37,6 +45,8 @@
 //
 .skills .list-group {
   .list-group-item {
+    width: 30%;
+    margin: 10px 1.666%;
     border-radius: 20px;
   }
 
@@ -93,8 +103,4 @@
   h3:last-child {
     margin-top: 50px;
   }
-}
-
-.no-item {
-  width: 100%;
 }

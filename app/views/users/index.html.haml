@@ -1,53 +1,54 @@
 %div{class: "projects"}
-  %h2
+  %h2{class: "title"}
     %strong
       Your Projects:
 
-  %h3
-    %u
-      Your Hosted Projects:
+  %div{class: "hosted-projects row"}
+    %h3{class: "title"}
+      %u
+        Your Hosted Projects:
 
-  %ul{class: "list-group"}
-    -if @hosted_projects.blank?
-      %li{class: "list-group-item no-item"}
-        None
-    -else
-      - @hosted_projects.each do |p|
-        %div{class: "project col-sm-6"}
+    %ul{class: "list-group"}
+      -if @hosted_projects.blank?
+        %li{class: "list-group-item no-item"}
+          None
+      -else
+        - @hosted_projects.each do |p|
+          %div{class: "project col-sm-6"}
+            %li{class: "list-group-item"}
+              %strong
+                Name:
+              = p.name
+            %li{class: "list-group-item"}
+              %strong
+                Public Description:
+              = p.public_description
+            %li{class: "list-group-item"}
+              %strong
+                Private Description:
+              = p.private_description
+            %li{class: "list-group-item col-sm-6"}
+              = link_to "Edit Project", edit_project_path(p.id)
+            %li{class: "list-group-item col-sm-6"}
+              = link_to "Delete Project", project_path(p.id),
+                method: :delete
+  %div{class: "joined-projects row"}
+    %h3{class: "title"}
+      %u
+        Your Joined Projects
+
+    %ul{class: "list-group"}
+      -if @joined_projects.blank?
+        %li{class: "list-group-item no-item"}
+          None
+      -else
+        - @joined_projects.each do |p|
+          %li{class: "list-group-item"}= p.name
+          %li{class: "list-group-item"}= p.public_description
+          %li{class: "list-group-item"}= p.private_description
           %li{class: "list-group-item"}
-            %strong
-              Name:
-            = p.name
-          %li{class: "list-group-item"}
-            %strong
-              Public Description:
-            = p.public_description
-          %li{class: "list-group-item"}
-            %strong
-              Private Description:
-            = p.private_description
-          %li{class: "list-group-item col-sm-6"}
-            = link_to "Edit Project", edit_project_path(p.id)
-          %li{class: "list-group-item col-sm-6"}
-            = link_to "Delete Project", project_path(p.id),
+            = link_to "Leave Project", project_path(p.id, joined: true),
               method: :delete
-
-  %h3
-    %u
-      Your Joined Projects
-
-  %ul{class: "list-group"}
-    -if @joined_projects.blank?
-      %li{class: "list-group-item no-item"}
-        None
-    -else
-      - @joined_projects.each do |p|
-        %li{class: "list-group-item"}= p.name
-        %li{class: "list-group-item"}= p.public_description
-        %li{class: "list-group-item"}= p.private_description
-        %li{class: "list-group-item"}
-          = link_to "Leave Project", project_path(p.id, joined: true),
-            method: :delete
 
 = link_to('Edit registration', edit_user_registration_path)
 
@@ -56,7 +57,7 @@
 =link_to 'Back', :back
 
 %div{class: "skills"}
-  %h2
+  %h2{class: "title"}
     %strong
       Your Skills:
   %ul{class: "list-group"}
