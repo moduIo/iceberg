@@ -47,9 +47,18 @@
 //
 // Skills
 //
+.skills .title {
+  width: 80%;
+  background-color: #78A6C2;
+  margin-bottom: 0;
+  color: white;
+  padding: 10px 0;
+}
+
 .skills .list-group {
-  border: solid 1px #78A6C2;
+  border: solid 3px #78A6C2;
   background-color: white;
+  margin-top: 0;
 
   .list-group-item {
     width: 20%;
