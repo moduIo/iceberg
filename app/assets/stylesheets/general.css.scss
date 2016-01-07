@@ -20,6 +20,7 @@ body {
     padding-bottom: 9px;
     margin: 40px 0px 5px;
     border-bottom: none;
+    color: #4E82A0;
 }
 
 .home .header {
@@ -75,6 +76,7 @@ body {
 //
 .home .project {
     border: solid 1px #78A6C2;
+    margin: 20px 0;
 }
 
 //
@@ -107,13 +109,6 @@ body {
     img {
         max-width: 100%;
     }
-}
-
-//
-// Homepage Project Feed
-//
-.home .project {
-    margin: 20px;
 }
 
 //------------------------------------------
