@@ -48,30 +48,38 @@
 // Skills
 //
 .skills .list-group {
+  border: solid 1px black;
+  background-color: white;
+
   .list-group-item {
-    width: 30%;
-    margin: 10px 1.666%;
-    border-radius: 20px;
+    width: 20%;
+    margin: 10px 2.5%;
+    border-radius: 5px;
+    color: white;
   }
 
   .list-group-item:nth-child( even ) {
-    color: #F5C365;
-    border: solid 1px #F5C365;
+    //color: #F5C365;
+    //border: solid 4px #F5C365;
+    background-color: #FFAAAA;
   }
 
   .list-group-item:nth-child( 2n + 1 ) {
-    color: #FFAAAA;
-    border: solid 1px #FFAAAA;
+    //color: #FFAAAA;
+    //border: solid 4px #FFAAAA;
+    background-color: #B8E55E;
   }
 
   .list-group-item:nth-child( 3n + 1 ) {
-    color: #78A6C2;
-    border: solid 1px #78A6C2;
+    //color: #78A6C2;
+    //border: solid 4px #78A6C2;
+    background-color: #8B1558;
   }
 
   .list-group-item:first-child {
-    color: #8B1558;
-    border: solid 1px #8B1558;
+    //color: #8B1558;
+    //border: solid 4px #8B1558;
+    background-color: #78A6C2;
   }
 
 }
