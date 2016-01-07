@@ -61,6 +61,34 @@ body {
   background-color: #fff;
 }
 
+@media screen and ( max-width: 768px ) {
+  .btn {
+    margin: 4px 2px;
+  }
+
+  .home .page-header h1 {
+    font-size: 30px;
+  }
+
+  .home .page-header small {
+    display: block;
+    line-height: 2;
+  }
+
+  .home .project {
+    margin: 20px 0;
+  }
+
+  .home .list-group {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
 //
 // Homepage Project Feed
 //
@@ -87,11 +115,18 @@ body {
 }
 
 .navbar-default .title {
-    float: left;
-    font-size: 35px;
-    background-color: transparent;
-    color: white;
-    margin: 0 25px 0 10px;
+    display: none;
+}
+
+@media screen and ( max-width: 768px ) {
+    .navbar-default .title {
+      display: inline-block;
+      float: left;
+      font-size: 35px;
+      background-color: transparent;
+      color: white;
+      margin: 0 25px 0 10px;
+    }
 }
 
 .navbar-default .navbar-nav > .active > a,
