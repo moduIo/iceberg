@@ -8,39 +8,39 @@
 //
 //------------------------------------------
 .list-group {
-  width: 80%;
-  padding: 15px;
-  margin: 20px auto;
-  font-weight: 800;
+    width: 80%;
+    padding: 15px;
+    margin: 20px auto;
+    font-weight: 800;
 }
 
 .title {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 //
 // Projects
 //
 .projects .project {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 .projects .hosted-projects {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .projects .hosted-projects .project:nth-child( 2n + 1 ) {
-  clear: both;
+    clear: both;
 }
 
 @media screen and ( max-width: 768px ) {
   .projects .project {
-    margin: 20px 0;
-    padding: 0;
+      margin: 20px 0;
+      padding: 0;
   }
 
   .projects .list-group {
-    padding: 0;
+      padding: 0;
   }
 }
 
@@ -48,80 +48,80 @@
 // Skills
 //
 .skills .title {
-  width: 80%;
-  background-color: #78A6C2;
-  margin-bottom: 0;
-  color: white;
-  padding: 10px 0;
+    width: 80%;
+    background-color: #78A6C2;
+    margin-bottom: 0;
+    color: white;
+    padding: 10px 0;
 }
 
 .skills .list-group {
-  border: solid 3px #78A6C2;
-  background-color: white;
-  margin-top: 0;
+    border: solid 3px #78A6C2;
+    background-color: white;
+    margin-top: 0;
 
-  .list-group-item {
-    width: 20%;
-    margin: 20px 2.5%;
-    border-radius: 25px;
-    color: white;
-    border: solid 1px #78A6C2;
-  }
+    .list-group-item {
+        width: 20%;
+        margin: 20px 2.5%;
+        border-radius: 25px;
+        color: white;
+        border: solid 1px #78A6C2;
+    }
 
-  .list-group-item:nth-child( n + 1 ) {
-    background-color: #B8E55E;
-  }
+    .list-group-item:nth-child( n + 1 ) {
+        background-color: #B8E55E;
+    }
 
-  .list-group-item:nth-child( 2n + 1 ) {
-    background-color: #78A6C2;
-  }
+    .list-group-item:nth-child( 2n + 1 ) {
+        background-color: #78A6C2;
+    }
 
-  .list-group-item:nth-child( 3n + 1 ) {
-    background-color: #8B1558;
-  }
+    .list-group-item:nth-child( 3n + 1 ) {
+        background-color: #8B1558;
+    }
 
-  .list-group-item:nth-child( 4n + 1 ) {
-    background-color: #F5C365;
-    clear: both;
-  }
+    .list-group-item:nth-child( 4n + 1 ) {
+        background-color: #F5C365;
+        clear: both;
+    }
 
-  .list-group-item:nth-child( 5n + 1 ) {
-    background-color: #FFAAAA;
-  }
+    .list-group-item:nth-child( 5n + 1 ) {
+        background-color: #FFAAAA;
+    }
 
 }
 
 .list-group .list-group-item a {
-  display: block;
+    display: block;
 }
 
 .edit_user {
-  display: block;
-  clear: both;
-  margin-top: 65px;
+    display: block;
+    clear: both;
+    margin-top: 65px;
 }
 
 @media screen and ( min-width: 768px ) {
 
-  .list-group:nth-child( 2 ) {
-    .list-group .list-group-item:nth-child( 4 ),
-    .list-group .list-group-item:nth-child( 5 ) {
-      width: 50%;
-      float: left;
+    .list-group:nth-child( 2 ) {
+        .list-group .list-group-item:nth-child( 4 ),
+        .list-group .list-group-item:nth-child( 5 ) {
+            width: 50%;
+            float: left;
+        }
     }
-  }
 
-  h1,
-  h2,
-  h3 {
-    clear: both;
-    color: #4E82A0;
-    font-weight: 900;
-  }
+    h1,
+    h2,
+    h3 {
+        clear: both;
+        color: #4E82A0;
+        font-weight: 900;
+    }
 
-  h3:last-child {
-    margin-top: 50px;
-  }
+    h3:last-child {
+        margin-top: 50px;
+    }
 }
 
 //------------------------------------------
@@ -134,20 +134,23 @@
 // New User form
 //
 .new_user {
-  width: 80%;
-  border: 2px solid white;
-  padding: 15px;
-  margin: 20px 10px;
-  background-color: #A8CBDF;
-  color: #fff;
+    width: 80%;
+    border: 2px solid white;
+    padding: 15px;
+    margin: 20px 10px;
+    background-color: #A8CBDF;
+    color: #fff;
 }
 
-.new_user .form-group {
-  text-align: left;
+  .new_user .form-group {
+    text-align: left;
 }
 
+//
+// >= Small Devices
+//
 @media screen and ( min-width: 768px ) {
-  .new_user {
-    width: 400px;
-  }
+    .new_user {
+        width: 400px;
+    }
 }
