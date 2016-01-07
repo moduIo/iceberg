@@ -34,7 +34,7 @@
       - flash.each do |name, msg|
         = content_tag :div, msg, class: name
       = yield
-      
+
   -if current_page?(root_path)
     %ul{ class: "list-group project-feed" }
       -if @projects.blank?
