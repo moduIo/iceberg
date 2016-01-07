@@ -7,56 +7,60 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
     %link{:href => asset_path("favicon.jpg")}(rel="icon" type="image/jpg")
-  %body{class: "home"}
-    .container-fluid
-      %center
-        %nav{class: "navbar navbar-default"}
-          .container-fluid
-            .navbar-header
-              %img{ :src => asset_path("logo.jpg"),
-                    class: "logo"}
-              %div{ class: "title" } iceberg
-            %div{ class: "collapse navbar-collapse",
-              id: "%%bs-example-navbar-collapse-1" }
-              %ul{ class: "nav navbar-nav"}
-                = render 'devise/menu/home_item'
-                = render 'devise/menu/registration_items'
-                = render 'devise/menu/my_profile_path'
-                = render 'devise/menu/creation_items'
-                = render 'devise/menu/message_items'
-                = render 'devise/menu/login_items'
-        - flash.each do |name, msg|
-          = content_tag :div, msg, class: name
-        = yield
-    -if current_page?(root_path)
-      %ul{ class: "list-group" }
-        -if @projects.blank?
-          %li{ class: "list-group-item" }
-            Looks like there aren't any projects yet... time to make one!
-        -else
-          - @projects.each do |p|
-            %div{ class: "project" }
-              %li{ class: "list-group-item" }
-                %strong
-                  Name:
-                = p.name
-              -if p.user == @user
+
+  -if current_page?(root_path)
+    %body{class: "home"}
+  -else
+    %body
+      .container-fluid
+        %center
+          %nav{class: "navbar navbar-default"}
+            .container-fluid
+              .navbar-header
+                %img{ :src => asset_path("logo.jpg"),
+                      class: "logo"}
+                %div{ class: "title" } iceberg
+              %div{ class: "collapse navbar-collapse",
+                id: "%%bs-example-navbar-collapse-1" }
+                %ul{ class: "nav navbar-nav"}
+                  = render 'devise/menu/home_item'
+                  = render 'devise/menu/registration_items'
+                  = render 'devise/menu/my_profile_path'
+                  = render 'devise/menu/creation_items'
+                  = render 'devise/menu/message_items'
+                  = render 'devise/menu/login_items'
+          - flash.each do |name, msg|
+            = content_tag :div, msg, class: name
+          = yield
+      -if current_page?(root_path)
+        %ul{ class: "list-group" }
+          -if @projects.blank?
+            %li{ class: "list-group-item" }
+              Looks like there aren't any projects yet... time to make one!
+          -else
+            - @projects.each do |p|
+              %div{ class: "project" }
                 %li{ class: "list-group-item" }
                   %strong
-                    Private Description:
-                  = p.private_description
-              %li{ class: "list-group-item" }
-                %strong
-                  Public Description:
-                = p.public_description
-              %li{ class: "list-group-item" }
-                %strong
-                  User:
-                = p.user.username
-              %li{ class: "list-group-item" }
-                %strong
-                  Category:
-                = p.project_category
+                    Name:
+                  = p.name
+                -if p.user == @user
+                  %li{ class: "list-group-item" }
+                    %strong
+                      Private Description:
+                    = p.private_description
+                %li{ class: "list-group-item" }
+                  %strong
+                    Public Description:
+                  = p.public_description
+                %li{ class: "list-group-item" }
+                  %strong
+                    User:
+                  = p.user.username
+                %li{ class: "list-group-item" }
+                  %strong
+                    Category:
+                  = p.project_category
   %footer{ class: "footer" }
     .container-fluid
       %div{ class: "title" } Just the tip

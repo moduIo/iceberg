@@ -29,6 +29,10 @@
   margin-bottom: 20px;
 }
 
+.projects .hosted-projects .project:nth-child( 2n + 1 ) {
+  clear: both;
+}
+
 @media screen and ( max-width: 768px ) {
   .projects .project {
     margin: 20px 0;
