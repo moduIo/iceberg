@@ -9,7 +9,8 @@
     %link{:href => asset_path("favicon.jpg")}(rel="icon" type="image/jpg")
 
   -if current_page?(root_path)
-    %body{class: "home"}
+    %body{class: "home",
+          background: asset_path("background.jpg")}
   -else
     %body
   .container-fluid{ class: "header" }
