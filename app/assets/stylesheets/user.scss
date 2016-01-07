@@ -68,33 +68,27 @@
     border: solid 1px #78A6C2;
   }
 
-  .list-group-item:nth-child( even ) {
-    //color: #F5C365;
-    //border: solid 4px #F5C365;
-    background-color: #FFAAAA;
-  }
-
-  .list-group-item:nth-child( 2n + 1 ) {
-    //color: #FFAAAA;
-    //border: solid 4px #FFAAAA;
+  .list-group-item:nth-child( n + 1 ) {
     background-color: #B8E55E;
   }
 
-  .list-group-item:nth-child( 3n + 1 ) {
-    //color: #78A6C2;
-    //border: solid 4px #78A6C2;
-    background-color: #8B1558;
-  }
-
-  .list-group-item:first-child {
-    //color: #8B1558;
-    //border: solid 4px #8B1558;
+  .list-group-item:nth-child( 2n + 1 ) {
     background-color: #78A6C2;
   }
 
+  .list-group-item:nth-child( 3n + 1 ) {
+    background-color: #8B1558;
+  }
+
   .list-group-item:nth-child( 4n + 1 ) {
+    background-color: #F5C365;
     clear: both;
   }
+
+  .list-group-item:nth-child( 5n + 1 ) {
+    background-color: #FFAAAA;
+  }
+
 }
 
 .list-group .list-group-item a {
