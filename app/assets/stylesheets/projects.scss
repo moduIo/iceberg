@@ -12,26 +12,42 @@
 //
 // New Project form
 //
-.new_project {
-  width: 50%;
-  border: 2px solid white;
-  padding: 15px;
-  margin: 20px 10px;
-  background-color: #A8CBDF;
-  color: #fff;
-}
-
-// Small screen
-@media screen and ( max-width: 992px ) {
-  .new_project {
-    width: 80%;
-  }
-}
-
-// XS screen
-@media screen and ( max-width: 768px ) {
-  .new_project {
+.new-project-section .title {
     width: 100%;
-    margin: 20px 0;
-  }
+    margin: 40px auto 0;
+    padding: 10px 0;
+    background-color: white;
+    color: #4E82A0;
+}
+
+.new_project {
+    width: 100%;
+    margin: 0 0 20px;
+    border: 3px solid white;
+    padding: 15px 30px;
+    background-color: #A8CBDF;
+    color: #fff;
+}
+
+// SM screen
+@media screen and ( min-width: 768px ) {
+    .new_project {
+        width: 80%;
+    }
+
+    .new-project-section .title {
+        width: 80%;
+    }
+}
+
+// MD screen
+@media screen and ( min-width: 992px ) {
+    .new_project {
+        width: 50%;
+        margin: 0 10px 20px;
+    }
+
+    .new-project-section .title {
+        width: 50%;
+    }
 }
