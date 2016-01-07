@@ -28,9 +28,9 @@
                 %strong
                   Private Description:
                 = p.private_description
-              %li{class: "list-group-item col-sm-6"}
+              %li{class: "list-group-item col-xs-6 edit"}
                 = link_to "Edit Project", edit_project_path(p.id)
-              %li{class: "list-group-item col-sm-6"}
+              %li{class: "list-group-item col-xs-6 delete"}
                 = link_to "Delete Project", project_path(p.id),
                   method: :delete
     %div{class: "joined-projects row"}

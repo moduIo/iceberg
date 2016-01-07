@@ -23,8 +23,13 @@
 
 .profile .projects .project {
     padding: 15px;
-    margin: 20px auto;
+    margin: 30px 5%;
     font-weight: 800;
+}
+
+.profile .projects .project .edit,
+.profile .projects .project .delete {
+    font-size: 12px;
 }
 
 .profile .projects .title:first-of-type {
@@ -53,8 +58,17 @@
         width: 80%;
     }
 
+    .profile .projects .project {
+        margin: 30px 0;
+    }
+
     .profile .projects .hosted-projects {
         padding: 0px 30px;
+    }
+
+    .profile .projects .project .edit,
+    .profile .projects .project .delete {
+        font-size: 14px;
     }
 }
 
