@@ -96,12 +96,16 @@
     margin-top: 0;
 
     .skill {
-        border-radius: 25px;
         color: white;
-        border: solid 1px #78A6C2;
+        border: solid 3px white;
+        border-top: none;
         font-size: 16px;
         font-weight: 900;
-        margin: 20px 0;
+        margin: 0;
+    }
+
+    .skill:first-child {
+        border-top: solid 3px white;
     }
 
     .skill:nth-child( n + 1 ) {
@@ -156,9 +160,11 @@
         padding: 0 35px;
     }
 
-  .profile .skills .skill {
-    margin: 0 10px;
-  }
+    .profile .skills .skill {
+        margin: 0 10px;
+        border-radius: 25px;
+        border: solid 1px #78A6C2;
+    }
 }
 
 
