@@ -198,9 +198,17 @@ ul {
   font-size: 20px;
   text-align: center;
   font-style: italic;
+  color: #4E82A0;
 }
 
 .footer .image {
   display: block;
-  margin: 20px auto;
+  margin: 0 auto;
+  width: 250px;
+}
+
+@media screen and ( min-width: 768px ) {
+    .footer .image {
+        width: 20%;
+    }
 }
