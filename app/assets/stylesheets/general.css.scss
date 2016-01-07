@@ -140,6 +140,11 @@ body {
     color: #fff;
 }
 
+.navbar-default .navbar-nav > li:last-child {
+    position: absolute;
+    right: 0;
+}
+
 // Formatting the menu
 .hmenu {
     margin:0;
