@@ -66,6 +66,8 @@
         border-radius: 25px;
         color: white;
         border: solid 1px #78A6C2;
+        font-size: 16px;
+        font-weight: 900;
     }
 
     .list-group-item:nth-child( n + 1 ) {
@@ -87,6 +89,10 @@
 
     .list-group-item:nth-child( 5n + 1 ) {
         background-color: #FFAAAA;
+    }
+
+    .list-group-item a {
+        font-size: 10px;
     }
 
 }
