@@ -125,6 +125,7 @@ body {
       font-size: 35px;
       background-color: transparent;
       margin: 0 25px 0 10px;
+      color: white;
     }
 }
 
@@ -165,34 +166,6 @@ ul {
     background: #e6efc2;
     color: #264409;
     border-color: #c6d880;
-}
-
-//------------------------------------------
-//
-// Login Page Styles
-//
-//------------------------------------------
-
-//
-// New User form
-//
-.new_user {
-    width: 80%;
-    border: 2px solid white;
-    padding: 15px;
-    margin: 20px 10px;
-    background-color: #A8CBDF;
-    color: #fff;
-}
-
-.new_user .form-group {
-    text-align: left;
-}
-
-@media screen and ( min-width: 768px ) {
-    .new_user {
-        width: 400px;
-    }
 }
 
 //------------------------------------------

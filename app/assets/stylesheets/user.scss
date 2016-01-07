@@ -104,3 +104,31 @@
     margin-top: 50px;
   }
 }
+
+//------------------------------------------
+//
+// Login Page Styles
+//
+//------------------------------------------
+
+//
+// New User form
+//
+.new_user {
+  width: 80%;
+  border: 2px solid white;
+  padding: 15px;
+  margin: 20px 10px;
+  background-color: #A8CBDF;
+  color: #fff;
+}
+
+.new_user .form-group {
+  text-align: left;
+}
+
+@media screen and ( min-width: 768px ) {
+  .new_user {
+    width: 400px;
+  }
+}
