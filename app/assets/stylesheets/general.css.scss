@@ -74,15 +74,25 @@ body {
 //
 // Home Project feed
 //
+.home .project-feed {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
 .home .project {
     border: solid 1px #78A6C2;
     margin: 20px 0;
 }
-
 //
 // XS Devices
 //
 @media screen and ( max-width: 768px ) {
+    .home .project-feed {
+      width: 90%;
+      margin: 0 5%;
+    }
+
     .btn {
         margin: 4px 2px;
     }
@@ -94,16 +104,6 @@ body {
     .home .page-header small {
         display: block;
         line-height: 2;
-    }
-
-    .home .project {
-        margin: 20px 0;
-        border: 1px solid black;
-    }
-
-    .home .list-group {
-        width: 100%;
-        margin: 0 0 20px;
     }
 
     img {

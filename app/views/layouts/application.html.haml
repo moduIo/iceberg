@@ -34,7 +34,7 @@
         = content_tag :div, msg, class: name
       = yield
   -if current_page?(root_path)
-    %ul{ class: "list-group" }
+    %ul{ class: "list-group project-feed" }
       -if @projects.blank?
         %li{ class: "list-group-item" }
           Looks like there aren't any projects yet... time to make one!

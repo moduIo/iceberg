@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="280b2f6d-1b51-4e53-85f1-6e9bed40293e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/v3.0/Oo3GB-zyq6SIQuzB6S0Cb_GuxvAP5KMz85sdy9qhv9A.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/v3.0/Oo3GB-zyq6SIQuzB6S0Cb_GuxvAP5KMz85sdy9qhv9A.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/v3.0/yBAGcYX8zECxWocU_SbSp3Zf9YeC8YI5LnLPA6DtAZ0.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/v3.0/yBAGcYX8zECxWocU_SbSp3Zf9YeC8YI5LnLPA6DtAZ0.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/general.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/general.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/index.html.haml" afterPath="$PROJECT_DIR$/app/views/users/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/user.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/user.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iceberg.iws" />
@@ -33,78 +37,8 @@
       <file leaf-file-name="application.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6734693" vertical-offset="0" max-vertical-offset="1110">
-              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/user.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.87755" vertical-offset="0" max-vertical-offset="2505">
-              <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.4" vertical-offset="0" max-vertical-offset="525">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="general.css.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/general.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44976076" vertical-offset="93" max-vertical-offset="3495">
-              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projects.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/projects.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.877551" vertical-offset="0" max-vertical-offset="930">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.haml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/projects/new.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6734693" vertical-offset="0" max-vertical-offset="435">
-              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_creation_items.html.haml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/menu/_creation_items.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6122449" vertical-offset="0" max-vertical-offset="120">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_user_skill_fields.haml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/_user_skill_fields.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0612245" vertical-offset="0" max-vertical-offset="255">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state vertical-scroll-proportion="-5.2916665" vertical-offset="413" max-vertical-offset="1110">
+              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -113,8 +47,18 @@
       <file leaf-file-name="index.html.haml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.4489796" vertical-offset="0" max-vertical-offset="1470">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state vertical-scroll-proportion="-1.6666666" vertical-offset="170" max-vertical-offset="1425">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/user.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.90430623" vertical-offset="1503" max-vertical-offset="3105">
+              <caret line="138" column="19" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -133,13 +77,13 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/menu/_login_items.html.haml" />
         <option value="$PROJECT_DIR$/app/views/projects/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/users/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/projects/new.html.haml" />
         <option value="$PROJECT_DIR$/app/views/devise/menu/_creation_items.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/projects.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/user.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/general.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/users/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/user.scss" />
       </list>
     </option>
   </component>
@@ -667,34 +611,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4489796" vertical-offset="0" max-vertical-offset="1470">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/menu/_creation_items.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6122449" vertical-offset="0" max-vertical-offset="120">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.4" vertical-offset="0" max-vertical-offset="525">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6734693" vertical-offset="0" max-vertical-offset="435">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -707,26 +627,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/user.scss">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.87755" vertical-offset="0" max-vertical-offset="2505">
-          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.437788" vertical-offset="0" max-vertical-offset="651">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/projects/new.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28708133" vertical-offset="0" max-vertical-offset="627">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6734693" vertical-offset="0" max-vertical-offset="1110">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        <state vertical-scroll-proportion="-5.2916665" vertical-offset="413" max-vertical-offset="1110">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/general.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44976076" vertical-offset="93" max-vertical-offset="3495">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        <state vertical-scroll-proportion="-6.0612245" vertical-offset="1083" max-vertical-offset="3495">
+          <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6666666" vertical-offset="170" max-vertical-offset="1425">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/user.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.90430623" vertical-offset="1503" max-vertical-offset="3105">
+          <caret line="138" column="19" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
           <folding />
         </state>
       </provider>

@@ -7,127 +7,166 @@
 // My Profile Page Styles
 //
 //------------------------------------------
-.list-group {
-    width: 80%;
-    padding: 15px;
-    margin: 20px auto;
-    font-weight: 800;
-}
-
-.title {
+.profile .title {
     margin: 20px 0;
 }
 
 //
 // Projects
 //
-.projects .project {
-    margin: 20px 0;
+.profile .projects {
+    width: 100%;
+    border: 3px solid #78A6C2;
+    background-color: white;
+    margin: 50px auto;
 }
 
-.projects .hosted-projects {
+.profile .projects .project {
+    padding: 15px;
+    margin: 20px auto;
+    font-weight: 800;
+}
+
+.profile .projects .title:first-of-type {
+    background-color: #78A6C2;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    padding: 10px 0;
+}
+
+.profile .projects .hosted-projects {
     margin-bottom: 20px;
 }
 
-.projects .hosted-projects .project:nth-child( 2n + 1 ) {
+.profile .projects .hosted-projects .project:nth-child( 2n + 1 ) {
     clear: both;
 }
 
-@media screen and ( max-width: 768px ) {
-  .projects .project {
-      margin: 20px 0;
-      padding: 0;
-  }
+.profile .projects .list-group {
+    padding: 0;
+}
 
-  .projects .list-group {
-      padding: 0;
-  }
+@media screen and ( min-width: 768px ) {
+
+    .profile .projects {
+        width: 80%;
+    }
+
+    .profile .projects .hosted-projects {
+        padding: 0px 30px;
+    }
 }
 
 //
 // Skills
 //
-.skills .title {
-    width: 80%;
+.profile .skills .title {
+    width: 100%;
     background-color: #78A6C2;
     margin-bottom: 0;
     color: white;
     padding: 10px 0;
 }
 
-.skills .list-group {
+.profile .skills .list-group {
     border: solid 3px #78A6C2;
     background-color: white;
     margin-top: 0;
 
-    .list-group-item {
-        width: 20%;
-        margin: 20px 2.5%;
+    .skill {
         border-radius: 25px;
         color: white;
         border: solid 1px #78A6C2;
         font-size: 16px;
         font-weight: 900;
+        margin: 20px 0;
     }
 
-    .list-group-item:nth-child( n + 1 ) {
+    .skill:nth-child( n + 1 ) {
         background-color: #B8E55E;
     }
 
-    .list-group-item:nth-child( 2n + 1 ) {
+    .skill:nth-child( 2n + 1 ) {
         background-color: #F5C365;
     }
 
-    .list-group-item:nth-child( 3n + 1 ) {
+    .skill:nth-child( 3n + 1 ) {
         background-color: #78A6C2;
     }
 
-    .list-group-item:nth-child( 4n + 1 ) {
+    .skill:nth-child( 4n + 1 ) {
         background-color: #8B1558;
         clear: both;
     }
 
-    .list-group-item:nth-child( 5n + 1 ) {
+    .skill:nth-child( 5n + 1 ) {
         background-color: #FFAAAA;
     }
 
-    .list-group-item a {
+    .skill a {
         font-size: 10px;
     }
 
 }
 
-.list-group .list-group-item a {
+.profile .skills .list-group .skill a {
     display: block;
 }
 
-.edit_user {
-    display: block;
-    clear: both;
-    margin-top: 65px;
+.profile .skills .list-group:nth-child( 2 ) {
+    .profile .list-group .list-group-item:nth-child( 4 ),
+    .profile .list-group .list-group-item:nth-child( 5 ) {
+        width: 50%;
+        float: left;
+    }
 }
 
 @media screen and ( min-width: 768px ) {
 
-    .list-group:nth-child( 2 ) {
-        .list-group .list-group-item:nth-child( 4 ),
-        .list-group .list-group-item:nth-child( 5 ) {
-            width: 50%;
-            float: left;
-        }
+    .profile .skills .list-group,
+    .profile .skills .title {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
     }
 
-    h1,
-    h2,
-    h3 {
-        clear: both;
-        color: #4E82A0;
-        font-weight: 900;
+    .profile .skills .list-group {
+        padding: 0 35px;
     }
 
-    h3:last-child {
-        margin-top: 50px;
-    }
+  .profile .skills .skill {
+    margin: 0 10px;
+  }
+}
+
+
+//
+// Edit User
+//
+.edit_user {
+  display: block;
+  clear: both;
+  margin-top: 65px;
+}
+
+h1,
+h2,
+h3 {
+    clear: both;
+    color: #4E82A0;
+    font-weight: 900;
+}
+
+h3:last-child {
+    margin-top: 50px;
+}
+
+//
+// No item found
+//
+.profile .no-item {
+    width: 80%;
 }
 
 //------------------------------------------
@@ -156,6 +195,7 @@
 // >= Small Devices
 //
 @media screen and ( min-width: 768px ) {
+
     .new_user {
         width: 400px;
     }

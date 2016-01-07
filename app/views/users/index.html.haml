@@ -1,93 +1,90 @@
-%div{class: "projects"}
-  %h2{class: "title"}
-    %strong
-      Projects
+%div{ class: "profile" }
+  %div{ class: "projects" }
+    %h2{ class: "title" }
+      %strong
+        Projects
 
-  %div{class: "hosted-projects row"}
-    %h3{class: "title"}
-      %u
-        Your Hosted Projects
+    %div{ class: "hosted-projects row" }
+      %h3{ class: "subtitle" }
+        %u
+          Your Hosted Projects
 
-    %ul{class: "list-group"}
-      -if @hosted_projects.blank?
-        %li{class: "list-group-item no-item"}
-          None
-      -else
-        - @hosted_projects.each do |p|
-          %div{class: "project col-sm-6"}
+      %ul{class: "list-group"}
+        -if @hosted_projects.blank?
+          %li{class: "list-group-item no-item"}
+            None
+        -else
+          - @hosted_projects.each do |p|
+            %div{class: "project col-md-6"}
+              %li{class: "list-group-item"}
+                %strong
+                  Name:
+                = p.name
+              %li{class: "list-group-item"}
+                %strong
+                  Public Description:
+                = p.public_description
+              %li{class: "list-group-item"}
+                %strong
+                  Private Description:
+                = p.private_description
+              %li{class: "list-group-item col-sm-6"}
+                = link_to "Edit Project", edit_project_path(p.id)
+              %li{class: "list-group-item col-sm-6"}
+                = link_to "Delete Project", project_path(p.id),
+                  method: :delete
+    %div{class: "joined-projects row"}
+      %h3{class: "subtitle"}
+        %u
+          Your Joined Projects
+
+      %ul{class: "list-group"}
+        -if @joined_projects.blank?
+          %li{class: "list-group-item no-item"}
+            None
+        -else
+          - @joined_projects.each do |p|
+            %li{class: "list-group-item"}= p.name
+            %li{class: "list-group-item"}= p.public_description
+            %li{class: "list-group-item"}= p.private_description
             %li{class: "list-group-item"}
-              %strong
-                Name:
-              = p.name
-            %li{class: "list-group-item"}
-              %strong
-                Public Description:
-              = p.public_description
-            %li{class: "list-group-item"}
-              %strong
-                Private Description:
-              = p.private_description
-            %li{class: "list-group-item col-sm-6"}
-              = link_to "Edit Project", edit_project_path(p.id)
-            %li{class: "list-group-item col-sm-6"}
-              = link_to "Delete Project", project_path(p.id),
+              = link_to "Leave Project", project_path(p.id, joined: true),
                 method: :delete
-  %div{class: "joined-projects row"}
-    %h3{class: "title"}
-      %u
-        Your Joined Projects
 
+  %div{class: "skills"}
+    %h2{class: "title"}
+      %strong
+        Skills
     %ul{class: "list-group"}
-      -if @joined_projects.blank?
+      -if @skills.blank?
         %li{class: "list-group-item no-item"}
           None
+        %br
       -else
-        - @joined_projects.each do |p|
-          %li{class: "list-group-item"}= p.name
-          %li{class: "list-group-item"}= p.public_description
-          %li{class: "list-group-item"}= p.private_description
-          %li{class: "list-group-item"}
-            = link_to "Leave Project", project_path(p.id, joined: true),
+        -@skills.each do |skill|
+          %li{class: "list-group-item skill col-xs-12 col-sm-6 col-md-3"}
+            =skill.skill
+            =link_to "Delete Skill", destroy_skill_path(skill.id),
               method: :delete
 
-= link_to('Edit registration', edit_user_registration_path)
+      =simple_form_for @user,
+        method: 'patch' do |f|
 
-%br
+        #skills
+          =f.simple_fields_for :skills do |user_skill|
+            .nested-fields.user-skill-fields
+              .field
+                =f.input :id, label: "Narrow skill search by category: ",
+                  collection: @skill_categories, label_method: :category,
+                  input_method: :id,
+                  input_html: { class: "skill_category_select_form" }
+              .field
+                = f.association :skills, label: "Choose a skill: ",
+                  collection: Skill.all
+                = link_to_remove_association "remove skill", f
+              %br
+          =link_to_add_association 'add skill', f, :user_skills
+        %br
+        =f.button :submit
 
-=link_to 'Back', :back
-
-%div{class: "skills"}
-  %h2{class: "title"}
-    %strong
-      Skills
-  %ul{class: "list-group"}
-    -if @skills.blank?
-      %li{class: "list-group-item no-item"}
-        None
-      %br
-    -else
-      -@skills.each do |skill|
-        %li{class: "list-group-item col-sm-4"}
-          =skill.skill
-          =link_to "Delete Skill", destroy_skill_path(skill.id),
-            method: :delete
-
-    =simple_form_for @user,
-      method: 'patch' do |f|
-
-      #skills
-        =f.simple_fields_for :skills do |user_skill|
-          .nested-fields.user-skill-fields
-            .field
-              =f.input :id, label: "Narrow skill search by category: ",
-                collection: @skill_categories, label_method: :category,
-                input_method: :id,
-                input_html: { class: "skill_category_select_form" }
-            .field
-              = f.association :skills, label: "Choose a skill: ",
-                collection: Skill.all
-              = link_to_remove_association "remove skill", f
-            %br
-        =link_to_add_association 'add skill', f, :user_skills
-      %br
-      =f.button :submit
+  = link_to('Edit registration', edit_user_registration_path)
