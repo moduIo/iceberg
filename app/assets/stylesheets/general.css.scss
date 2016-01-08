@@ -284,4 +284,11 @@ ul {
     text-transform: uppercase;
     margin: 0 5px;
     text-align: center;
+    font-size: 10px;
+}
+
+@media screen and ( min-width: 400px ) {
+    .footer-menu li {
+        font-size: 14px;
+    }
 }
