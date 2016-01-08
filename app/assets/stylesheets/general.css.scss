@@ -96,26 +96,39 @@ body {
 .home .project {
     border: solid 1px #78A6C2;
     margin: 35px 0;
+    padding-bottom: 10px;
     background-color: white;
 }
 
 .home .project .project-header {
+    display: block;
     background-color: #78A6C2;
-    height: 40px;
+    height: 70px;
+}
+
+@media screen and ( min-width: 768px ) {
+    .home .project .project-header {
+        height: 40px;
+    }
 }
 
 .home .project .name {
     color: white;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 0px 15px;
 }
 
 .home .project .user {
     text-align: right;
+    padding: 0px 15px;
 }
 
 .home .project .list-group-item {
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 10px 15px 0;
 }
 
 //

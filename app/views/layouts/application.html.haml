@@ -49,20 +49,18 @@
         - @projects.each do |p|
           %div{ class: "project" }
             %div{ class: "project-header" }
-              %li{ class: "list-group-item col-xs-6 name" }
+              %li{ class: "list-group-item col-sm-6 name" }
                 %strong
                 = p.name
-              %li{ class: "list-group-item col-xs-6 user" }
+              %li{ class: "list-group-item col-sm-6 user" }
                 %strong
                 = p.user.username
             -if p.user == @user
               %li{ class: "list-group-item" }
                 %strong
-                  Private Description:
                 = p.private_description
             %li{ class: "list-group-item" }
               %strong
-                Public Description:
               = p.public_description
             %li{ class: "list-group-item" }
               %strong
