@@ -146,6 +146,13 @@ body {
     display: none;
 }
 
+.navbar-default .user-icon {
+    height: 20px;
+    position: absolute;
+    right: 75px;
+    top: 15px;
+}
+
 //
 // XS Devices
 //
@@ -173,7 +180,7 @@ body {
 
 .navbar-default .navbar-nav > li:last-child {
     position: absolute;
-    right: 0;
+    right: 8px;
 }
 
 // Formatting the menu

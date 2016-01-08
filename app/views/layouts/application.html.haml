@@ -30,6 +30,8 @@
               = render 'devise/menu/creation_items'
               = render 'devise/menu/my_profile_path'
               = render 'devise/menu/message_items'
+              %img{ class: "user-icon",
+                    src: asset_path("user.png") }
               = render 'devise/menu/login_items'
       - flash.each do |name, msg|
         = content_tag :div, msg, class: name
