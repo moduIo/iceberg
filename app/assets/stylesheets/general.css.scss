@@ -158,12 +158,19 @@ body {
 //
 @media screen and ( max-width: 768px ) {
     .navbar-default .title {
-      display: inline-block;
-      float: left;
-      font-size: 35px;
-      background-color: transparent;
-      margin: 0 25px 0 10px;
-      color: white;
+        display: inline-block;
+        float: left;
+        font-size: 35px;
+        background-color: transparent;
+        margin: 0 25px 0 10px;
+    }
+
+    .navbar-default .title a {
+        color: white !important;
+    }
+
+    .navbar-default .title a:hover {
+        text-decoration: none;
     }
 }
 
