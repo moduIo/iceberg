@@ -267,3 +267,21 @@ ul {
         width: 20%;
     }
 }
+
+//
+// Footer menu
+//
+.footer-menu {
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.footer-menu li {
+    list-style-type: none;
+    text-transform: uppercase;
+    margin: 0 5px;
+    text-align: center;
+}

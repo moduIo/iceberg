@@ -75,3 +75,9 @@
       %div{ class: "title" } Just the tip
       %img{ class: "image",
             :src => asset_path("favicon.jpg")}
+      %div{ class: "footer-menu" }
+        = render 'devise/menu/home_item'
+        = render 'devise/menu/registration_items'
+        = render 'devise/menu/creation_items'
+        = render 'devise/menu/my_profile_path'
+        = render 'devise/menu/message_items'
