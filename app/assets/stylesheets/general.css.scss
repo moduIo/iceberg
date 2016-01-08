@@ -107,6 +107,7 @@ body {
 }
 
 @media screen and ( min-width: 768px ) {
+
     .home .project .project-header {
         height: 40px;
     }
@@ -114,9 +115,16 @@ body {
 
 .home .project .name {
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 900;
-    padding: 0px 15px;
+}
+
+@media screen and ( min-width: 768px ) {
+
+    .home .project .name {
+        font-size: 20px;
+        padding: 5px 15px !important;
+    }
 }
 
 .home .project .user {
