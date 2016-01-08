@@ -88,9 +88,9 @@ body {
 // Home Project feed
 //
 .home .project-feed {
-  width: 80%;
-  display: block;
-  margin: 0 auto;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
 }
 
 .home .project {
@@ -99,8 +99,23 @@ body {
     background-color: white;
 }
 
-.home .project-feed .list-group-item {
-    background-color: transparent;
+.home .project .project-header {
+    background-color: #78A6C2;
+    height: 40px;
+}
+
+.home .project .name {
+    color: white;
+}
+
+.home .project .user {
+    text-align: right;
+}
+
+.home .project .list-group-item {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
 }
 
 //
