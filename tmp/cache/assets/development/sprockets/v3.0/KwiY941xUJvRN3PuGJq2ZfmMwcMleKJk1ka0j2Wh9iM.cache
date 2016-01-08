@@ -1,7 +1,0 @@
-I"b(function() {
-  $(function() {
-    return $(".remove_fields").click();
-  });
-
-}).call(this);
-:ET

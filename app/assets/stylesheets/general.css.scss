@@ -146,13 +146,6 @@ body {
     display: none;
 }
 
-.navbar-default .user-icon {
-    height: 20px;
-    position: absolute;
-    right: 75px;
-    top: 15px;
-}
-
 //
 // XS Devices
 //
@@ -185,9 +178,30 @@ body {
     color: #fff;
 }
 
-.navbar-default .navbar-nav > li:last-child {
+//
+// User Panel Navbar
+//
+.navbar-default .navbar-nav .user-panel {
     position: absolute;
-    right: 8px;
+    right: 0;
+    background-color: #DAEBF5;
+    width: 125px;
+    height: 50px;
+    padding: 14px;
+}
+
+.navbar-default .navbar-nav .user-panel li {
+    display: inline-block;
+}
+
+.navbar-default .navbar-nav .user-panel li a {
+    color: #326989;
+    font-weight: 900;
+}
+
+.navbar-default .navbar-nav .user-panel .user-icon {
+    height: 20px;
+    display: inline-block;
 }
 
 // Formatting the menu
