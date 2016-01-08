@@ -48,10 +48,14 @@
       -else
         - @projects.each do |p|
           %div{ class: "project" }
-            %li{ class: "list-group-item" }
+            %li{ class: "list-group-item col-xs-6" }
               %strong
                 Name:
               = p.name
+            %li{ class: "list-group-item col-xs-6" }
+              %strong
+                User:
+              = p.user.username
             -if p.user == @user
               %li{ class: "list-group-item" }
                 %strong
@@ -61,10 +65,6 @@
               %strong
                 Public Description:
               = p.public_description
-            %li{ class: "list-group-item" }
-              %strong
-                User:
-              = p.user.username
             %li{ class: "list-group-item" }
               %strong
                 Category:

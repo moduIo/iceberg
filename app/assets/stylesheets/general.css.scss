@@ -96,7 +96,13 @@ body {
 .home .project {
     border: solid 1px #78A6C2;
     margin: 35px 0;
+    background-color: white;
 }
+
+.home .project-feed .list-group-item {
+    background-color: transparent;
+}
+
 //
 // XS Devices
 //
